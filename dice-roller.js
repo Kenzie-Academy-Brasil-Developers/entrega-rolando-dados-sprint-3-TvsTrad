@@ -72,13 +72,13 @@ gH.appendChild(gT)
 let gHH = document.getElementById("grafico")
 gHH.appendChild(gH)
 
+let maxWidth = 330
 // Criacao das divs bars na div grafico.
-
 for (let j = 2 ; j < count.length; j++){
     let percent = greaterNumber(count);
     let newDiv = document.createElement("div");
     newDiv.className = "bar";
-    newDiv.style.width = (count[j] / percent) * 700 +"px";
+    newDiv.style.width = (count[j] / percent) * maxWidth +"px";
     newDiv.style.backgroundColor = "#454545"
 
     let text = document.createTextNode(j + " : " + count[j]);
